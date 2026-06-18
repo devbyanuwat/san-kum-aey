@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ตะกร้าสานคำเอ้ย — ตะกร้า/กระเป๋าสานเส้นพลาสติก งานทำมือ รับผลิต+ขายปลีก</title>
+  <meta name="description" content="ตะกร้าสานคำเอ้ย รับผลิตและขายตะกร้า/กระเป๋าสานเส้นพลาสติกงานทำมือ สีสดคัสตอมได้ กันน้ำ ล้างได้ ส่งทั่วไทย สั่งทาง LINE: jim113 โทร 098-563-6995" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Chonburi&family=Sarabun:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: { DEFAULT: '#7C2D12', dark: '#5A1F0C' },
+            secondary: '#B91C1C',
+            accent: { DEFAULT: '#A16207', light: '#CA8A04' },
+            cream: '#FFFBF5',
+            sand: '#F7EEE3',
+            ink: '#3A1410',
+            muted: '#8A7568',
+          },
+          fontFamily: {
+            display: ['Chonburi', 'serif'],
+            sans: ['Sarabun', 'system-ui', 'sans-serif'],
+          },
+          maxWidth: { content: '76rem' },
+        },
+      },
+    };
+  </script>
+
+  <style>
+    :root { --weave: #7C2D12; }
+    html { scroll-behavior: smooth; }
+    body { background: #FFFBF5; color: #3A1410; }
+
+    /* CSS woven texture — evokes the basket weave */
+    .weave {
+      background-color: var(--weave);
+      background-image:
+        repeating-linear-gradient(45deg, rgba(255,255,255,.18) 0 7px, transparent 7px 14px),
+        repeating-linear-gradient(-45deg, rgba(0,0,0,.12) 0 7px, transparent 7px 14px);
+      background-size: 20px 20px;
+    }
+    .weave-soft {
+      background-image:
+        repeating-linear-gradient(45deg, rgba(124,45,18,.07) 0 8px, transparent 8px 16px),
+        repeating-linear-gradient(-45deg, rgba(124,45,18,.05) 0 8px, transparent 8px 16px);
+    }
+
+    .link-underline { position: relative; }
+    .link-underline::after {
+      content: ''; position: absolute; left: 0; bottom: -4px; height: 2px; width: 0;
+      background: #A16207; transition: width .25s ease;
+    }
+    .link-underline:hover::after { width: 100%; }
+
+    .lift { transition: transform .25s ease, box-shadow .25s ease; }
+    .lift:hover { transform: translateY(-6px); box-shadow: 0 18px 40px -18px rgba(124,45,18,.45); }
+
+    .reveal { opacity: 0; transform: translateY(24px); transition: opacity .6s ease, transform .6s ease; }
+    .reveal.in { opacity: 1; transform: none; }
+
+    :focus-visible { outline: 3px solid #A16207; outline-offset: 3px; border-radius: 6px; }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .lift, .reveal, .link-underline::after { transition: none; }
+      .reveal { opacity: 1; transform: none; }
+    }
+  </style>
+</head>
+
+<body class="font-sans antialiased">
+
+  <!-- Announcement bar -->
+  <div class="weave text-white text-center text-sm font-medium py-2 px-4">
+    รับผลิต (OEM) + ขายปลีก · งานสานมือทุกใบ · ส่งทั่วไทย
+  </div>
+
+  <!-- Nav -->
+  <header class="sticky top-0 z-50 bg-cream/90 backdrop-blur border-b border-primary/10">
+    <nav class="max-w-content mx-auto px-5 h-16 flex items-center justify-between gap-4">
+      <a href="#top" class="flex items-center gap-2.5 shrink-0">
+        <span class="weave w-9 h-9 rounded-lg shrink-0" aria-hidden="true"></span>
+        <span class="font-display text-2xl text-primary leading-none">ตะกร้าสานคำเอ้ย</span>
+      </a>
+      <ul class="hidden md:flex items-center gap-7 text-[15px] font-medium text-ink/80">
+        <li><a href="#features" class="link-underline">จุดเด่น</a></li>
+        <li><a href="#products" class="link-underline">สินค้า</a></li>
+        <li><a href="#oem" class="link-underline">รับผลิต</a></li>
+        <li><a href="#reviews" class="link-underline">รีวิว</a></li>
+        <li><a href="#contact" class="link-underline">ติดต่อ</a></li>
+      </ul>
+      <a href="#contact"
+         class="inline-flex items-center gap-2 bg-primary hover:bg-primary-dark text-white font-semibold px-4 h-11 rounded-full transition-colors">
+        <i data-lucide="message-circle" class="w-[18px] h-[18px]"></i>
+        <span class="hidden sm:inline">สั่งทาง LINE</span>
+        <span class="sm:hidden">LINE</span>
+      </a>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <!-- Hero -->
+    <section class="relative overflow-hidden weave-soft">
+      <div class="max-w-content mx-auto px-5 py-16 md:py-24 grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <span class="inline-flex items-center gap-2 bg-accent/15 text-accent font-semibold text-sm px-3.5 py-1.5 rounded-full">
+            <i data-lucide="sparkles" class="w-4 h-4"></i> งานสานมือ · เส้นพลาสติกคุณภาพ
+          </span>
+          <h1 class="font-display text-primary text-5xl md:text-6xl lg:text-7xl leading-[1.05] mt-5">
+            ตะกร้าสาน<br />ที่สาน<span class="text-accent">ด้วยมือ</span>
+          </h1>
+          <p class="text-lg text-ink/75 mt-6 max-w-xl">
+            กระเป๋าและตะกร้าสานเส้นพลาสติก สีสดทุกใบ กันน้ำ ล้างได้ ไม่ขึ้นรา
+            สั่งทำสี-ลายเองได้ รับผลิตจำนวนมากสำหรับงานบวช งานแต่ง และของขวัญองค์กร
+          </p>
+          <div class="flex flex-wrap gap-3 mt-8">
+            <a href="#products"
+               class="inline-flex items-center gap-2 bg-primary hover:bg-primary-dark text-white font-semibold px-6 py-3.5 rounded-full transition-colors">
+              <i data-lucide="shopping-bag" class="w-5 h-5"></i> ดูสินค้า
+            </a>
+            <a href="#oem"
+               class="inline-flex items-center gap-2 bg-white hover:bg-sand text-primary font-semibold px-6 py-3.5 rounded-full border-2 border-primary/15 transition-colors">
+              <i data-lucide="factory" class="w-5 h-5"></i> รับผลิต / สั่งทำ
+            </a>
+          </div>
+          <dl class="flex flex-wrap gap-x-10 gap-y-4 mt-10">
+            <div>
+              <dt class="font-display text-3xl text-primary">100%</dt>
+              <dd class="text-sm text-muted">งานสานมือ</dd>
+            </div>
+            <div>
+              <dt class="font-display text-3xl text-primary">4.9<span class="text-accent">★</span></dt>
+              <dd class="text-sm text-muted">คะแนนรีวิว</dd>
+            </div>
+            <div>
+              <dt class="font-display text-3xl text-primary">ส่งทั่วไทย</dt>
+              <dd class="text-sm text-muted">เก็บปลายทางได้</dd>
+            </div>
+          </dl>
+        </div>
+
+        <!-- Hero collage: woven swatches representing the colorful product line -->
+        <div class="relative">
+          <div class="grid grid-cols-2 gap-4">
+            <div class="weave rounded-2xl aspect-[4/5] shadow-xl lift" style="--weave:#C2410C" aria-hidden="true"></div>
+            <div class="weave rounded-2xl aspect-[4/5] shadow-xl lift mt-8" style="--weave:#15803D" aria-hidden="true"></div>
+            <div class="weave rounded-2xl aspect-[4/5] shadow-xl lift -mt-4" style="--weave:#6D28D9" aria-hidden="true"></div>
+            <div class="weave rounded-2xl aspect-[4/5] shadow-xl lift mt-4" style="--weave:#1D4ED8" aria-hidden="true"></div>
+          </div>
+          <div class="absolute -bottom-5 left-1/2 -translate-x-1/2 bg-white rounded-2xl shadow-lg px-5 py-3 flex items-center gap-3 border border-primary/10 w-max">
+            <span class="weave w-10 h-10 rounded-lg" style="--weave:#A16207" aria-hidden="true"></span>
+            <div class="leading-tight">
+              <p class="font-semibold text-primary text-sm">คัสตอมสี + ลายได้</p>
+              <p class="text-xs text-muted">เลือกสีเส้นเองทั้งใบ</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="max-w-content mx-auto px-5 py-20 md:py-24">
+      <div class="text-center max-w-2xl mx-auto reveal">
+        <h2 class="font-display text-4xl md:text-5xl text-primary">ทำไมต้องสานพลาสติก</h2>
+        <p class="text-ink/70 mt-4 text-lg">ข้อดีที่งานหวายหรือผ้าทำไม่ได้ — ทน คุ้ม ใช้ได้จริงทุกวัน</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
+        <article class="bg-white rounded-2xl p-7 border border-primary/10 lift reveal">
+          <span class="weave w-12 h-12 rounded-xl grid place-items-center text-white mb-5" style="--weave:#1D4ED8">
+            <i data-lucide="droplets" class="w-6 h-6"></i>
+          </span>
+          <h3 class="font-semibold text-lg text-primary">กันน้ำ ล้างได้</h3>
+          <p class="text-ink/70 mt-2 text-[15px]">เปียกน้ำได้ ล้างทำความสะอาดง่าย ไม่ขึ้นราเหมือนงานหวาย</p>
+        </article>
+        <article class="bg-white rounded-2xl p-7 border border-primary/10 lift reveal">
+          <span class="weave w-12 h-12 rounded-xl grid place-items-center text-white mb-5" style="--weave:#C2410C">
+            <i data-lucide="palette" class="w-6 h-6"></i>
+          </span>
+          <h3 class="font-semibold text-lg text-primary">สีสด คัสตอมได้</h3>
+          <p class="text-ink/70 mt-2 text-[15px]">เลือกสีเส้นและลวดลายเองทั้งใบ ทำสีตามธีมงานหรือแบรนด์ได้</p>
+        </article>
+        <article class="bg-white rounded-2xl p-7 border border-primary/10 lift reveal">
+          <span class="weave w-12 h-12 rounded-xl grid place-items-center text-white mb-5" style="--weave:#15803D">
+            <i data-lucide="hand" class="w-6 h-6"></i>
+          </span>
+          <h3 class="font-semibold text-lg text-primary">งานสานมือทุกใบ</h3>
+          <p class="text-ink/70 mt-2 text-[15px]">สานทีละใบด้วยมือ ลายแน่น ขอบเก็บเรียบร้อย ไม่ใช่งานโหลโรงงาน</p>
+        </article>
+        <article class="bg-white rounded-2xl p-7 border border-primary/10 lift reveal">
+          <span class="weave w-12 h-12 rounded-xl grid place-items-center text-white mb-5" style="--weave:#6D28D9">
+            <i data-lucide="shield-check" class="w-6 h-6"></i>
+          </span>
+          <h3 class="font-semibold text-lg text-primary">แข็งแรง ทนทาน</h3>
+          <p class="text-ink/70 mt-2 text-[15px]">เส้นพลาสติกหนา รับน้ำหนักได้ ใช้ไปตลาด ใส่ของหนักได้สบาย</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Products -->
+    <section id="products" class="bg-sand/60 weave-soft py-20 md:py-24">
+      <div class="max-w-content mx-auto px-5">
+        <div class="flex flex-wrap items-end justify-between gap-4 reveal">
+          <div>
+            <h2 class="font-display text-4xl md:text-5xl text-primary">สินค้าของเรา</h2>
+            <p class="text-ink/70 mt-3 text-lg">เลือกแบบที่ชอบ หรือสั่งทำสี-ลายตามต้องการ</p>
+          </div>
+          <p class="text-sm text-muted">ราคาเริ่มต้นโดยประมาณ · สอบถามตามขนาด/ลาย</p>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
+          <!-- card -->
+          <article class="bg-white rounded-2xl overflow-hidden border border-primary/10 lift reveal">
+            <div class="weave h-48" style="--weave:#C2410C" aria-hidden="true"></div>
+            <div class="p-5">
+              <h3 class="font-semibold text-lg text-primary">กระเป๋าสานลายสก็อต</h3>
+              <p class="text-ink/65 text-sm mt-1">ทรง tote ใส่ของได้เยอะ หลายสี</p>
+              <div class="flex items-center justify-between mt-4">
+                <span class="font-display text-2xl text-accent">เริ่ม ฿119</span>
+                <a href="#contact" class="text-sm font-semibold text-primary inline-flex items-center gap-1 link-underline">สั่งซื้อ <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="bg-white rounded-2xl overflow-hidden border border-primary/10 lift reveal">
+            <div class="weave h-48" style="--weave:#15803D" aria-hidden="true"></div>
+            <div class="p-5">
+              <h3 class="font-semibold text-lg text-primary">ตะกร้าตลาดมีหูหิ้ว</h3>
+              <p class="text-ink/65 text-sm mt-1">หิ้วไปตลาดได้ ทรงคลาสสิก</p>
+              <div class="flex items-center justify-between mt-4">
+                <span class="font-display text-2xl text-accent">฿99–180</span>
+                <a href="#contact" class="text-sm font-semibold text-primary inline-flex items-center gap-1 link-underline">สั่งซื้อ <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="bg-white rounded-2xl overflow-hidden border border-primary/10 lift reveal">
+            <div class="weave h-48" style="--weave:#1D4ED8" aria-hidden="true"></div>
+            <div class="p-5">
+              <h3 class="font-semibold text-lg text-primary">กล่อง / ปิ่นโตมีฝา</h3>
+              <p class="text-ink/65 text-sm mt-1">มีฝาปิด งานปราณีต ใส่ของขวัญสวย</p>
+              <div class="flex items-center justify-between mt-4">
+                <span class="font-display text-2xl text-accent">฿250–490</span>
+                <a href="#contact" class="text-sm font-semibold text-primary inline-flex items-center gap-1 link-underline">สั่งซื้อ <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="bg-white rounded-2xl overflow-hidden border border-primary/10 lift reveal">
+            <div class="weave h-48" style="--weave:#B91C1C" aria-hidden="true"></div>
+            <div class="p-5">
+              <h3 class="font-semibold text-lg text-primary">ตะกร้าลายไทย</h3>
+              <p class="text-ink/65 text-sm mt-1">ลวดลายไทยประยุกต์ ทรงกลมมีหูหิ้ว</p>
+              <div class="flex items-center justify-between mt-4">
+                <span class="font-display text-2xl text-accent">สอบถามราคา</span>
+                <a href="#contact" class="text-sm font-semibold text-primary inline-flex items-center gap-1 link-underline">สั่งซื้อ <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="bg-white rounded-2xl overflow-hidden border border-primary/10 lift reveal">
+            <div class="weave h-48" style="--weave:#0E7490" aria-hidden="true"></div>
+            <div class="p-5">
+              <h3 class="font-semibold text-lg text-primary">พัดสานพลาสติก</h3>
+              <p class="text-ink/65 text-sm mt-1">ด้ามไม้ พัดเย็น ของฝากน่ารัก</p>
+              <div class="flex items-center justify-between mt-4">
+                <span class="font-display text-2xl text-accent">สอบถามราคา</span>
+                <a href="#contact" class="text-sm font-semibold text-primary inline-flex items-center gap-1 link-underline">สั่งซื้อ <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="bg-white rounded-2xl overflow-hidden border border-primary/10 lift reveal">
+            <div class="weave h-48" style="--weave:#6D28D9" aria-hidden="true"></div>
+            <div class="p-5">
+              <h3 class="font-semibold text-lg text-primary">ของชำร่วย / พวงกุญแจ</h3>
+              <p class="text-ink/65 text-sm mt-1">ชิ้นเล็กสานมือ สั่งจำนวนมากสำหรับงาน</p>
+              <div class="flex items-center justify-between mt-4">
+                <span class="font-display text-2xl text-accent">สั่งขั้นต่ำ</span>
+                <a href="#oem" class="text-sm font-semibold text-primary inline-flex items-center gap-1 link-underline">สั่งทำ <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- OEM band -->
+    <section id="oem" class="weave text-white">
+      <div class="max-w-content mx-auto px-5 py-20 md:py-24 grid lg:grid-cols-2 gap-12 items-center">
+        <div class="reveal">
+          <span class="inline-flex items-center gap-2 bg-white/15 font-semibold text-sm px-3.5 py-1.5 rounded-full">
+            <i data-lucide="factory" class="w-4 h-4"></i> รับผลิต OEM
+          </span>
+          <h2 class="font-display text-4xl md:text-5xl mt-5 leading-tight">สั่งทำจำนวนมาก<br />ในราคาส่ง</h2>
+          <p class="text-white/85 mt-5 text-lg max-w-lg">
+            เหมาะกับงานบวช งานแต่ง ของขวัญองค์กร และร้านค้าที่อยากรับไปขายต่อ
+            คัสตอมสี ลาย และโลโก้ได้ตามแบบ
+          </p>
+          <a href="#contact"
+             class="inline-flex items-center gap-2 bg-white text-primary font-semibold px-6 py-3.5 rounded-full mt-8 hover:bg-sand transition-colors">
+            <i data-lucide="phone-call" class="w-5 h-5"></i> คุยรายละเอียดงานผลิต
+          </a>
+        </div>
+        <ul class="grid sm:grid-cols-2 gap-4 reveal">
+          <li class="bg-white/10 rounded-xl p-5 flex gap-3"><i data-lucide="palette" class="w-6 h-6 shrink-0 text-accent-light"></i><span>เลือกสี/ลายเองได้ทั้งล็อต</span></li>
+          <li class="bg-white/10 rounded-xl p-5 flex gap-3"><i data-lucide="tag" class="w-6 h-6 shrink-0 text-accent-light"></i><span>ติดโลโก้/แท็กแบรนด์ได้</span></li>
+          <li class="bg-white/10 rounded-xl p-5 flex gap-3"><i data-lucide="boxes" class="w-6 h-6 shrink-0 text-accent-light"></i><span>ราคาส่งตามจำนวน</span></li>
+          <li class="bg-white/10 rounded-xl p-5 flex gap-3"><i data-lucide="truck" class="w-6 h-6 shrink-0 text-accent-light"></i><span>ส่งทั่วไทย จัดส่งเป็นล็อต</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Reviews -->
+    <section id="reviews" class="max-w-content mx-auto px-5 py-20 md:py-24">
+      <div class="text-center max-w-2xl mx-auto reveal">
+        <div class="inline-flex items-center gap-1 text-accent text-2xl" aria-label="คะแนน 4.9 จาก 5">
+          <i data-lucide="star" class="w-6 h-6 fill-current"></i>
+          <i data-lucide="star" class="w-6 h-6 fill-current"></i>
+          <i data-lucide="star" class="w-6 h-6 fill-current"></i>
+          <i data-lucide="star" class="w-6 h-6 fill-current"></i>
+          <i data-lucide="star" class="w-6 h-6 fill-current"></i>
+        </div>
+        <h2 class="font-display text-4xl md:text-5xl text-primary mt-4">ลูกค้าพูดถึงเรา</h2>
+        <p class="text-ink/70 mt-3 text-lg">งานคุณภาพ ส่งไว แพ็กดี — เสียงจริงจากลูกค้า</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6 mt-12">
+        <figure class="bg-white rounded-2xl p-7 border border-primary/10 lift reveal">
+          <blockquote class="text-ink/80">"ลายแน่นมาก สีสวยตรงปก หิ้วไปตลาดทุกวัน ทนสุด ๆ ค่ะ"</blockquote>
+          <figcaption class="flex items-center gap-3 mt-5">
+            <span class="weave w-10 h-10 rounded-full" style="--weave:#C2410C" aria-hidden="true"></span>
+            <div><p class="font-semibold text-primary text-sm">คุณแหม่ม</p><p class="text-xs text-muted">ลูกค้าประจำ</p></div>
+          </figcaption>
+        </figure>
+        <figure class="bg-white rounded-2xl p-7 border border-primary/10 lift reveal">
+          <blockquote class="text-ink/80">"สั่งทำของชำร่วยงานแต่ง 200 ใบ สีตรงธีม งานเนี้ยบทุกใบเลย"</blockquote>
+          <figcaption class="flex items-center gap-3 mt-5">
+            <span class="weave w-10 h-10 rounded-full" style="--weave:#15803D" aria-hidden="true"></span>
+            <div><p class="font-semibold text-primary text-sm">คุณบีม</p><p class="text-xs text-muted">งานแต่ง</p></div>
+          </figcaption>
+        </figure>
+        <figure class="bg-white rounded-2xl p-7 border border-primary/10 lift reveal">
+          <blockquote class="text-ink/80">"รับไปขายต่อที่ร้าน ลูกค้าชอบมาก ราคาส่งคุ้ม คุยง่ายด้วยค่ะ"</blockquote>
+          <figcaption class="flex items-center gap-3 mt-5">
+            <span class="weave w-10 h-10 rounded-full" style="--weave:#1D4ED8" aria-hidden="true"></span>
+            <div><p class="font-semibold text-primary text-sm">คุณนัท</p><p class="text-xs text-muted">ร้านค้าปลีก</p></div>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Channels + Contact CTA -->
+    <section id="contact" class="bg-sand/60 weave-soft py-20 md:py-24">
+      <div class="max-w-content mx-auto px-5">
+        <div class="text-center max-w-2xl mx-auto reveal">
+          <h2 class="font-display text-4xl md:text-5xl text-primary">สั่งซื้อ / สอบถาม</h2>
+          <p class="text-ink/70 mt-3 text-lg">ทักได้เลย ตอบไว เลือกช่องทางที่สะดวก</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-6 mt-12 max-w-3xl mx-auto">
+          <a href="https://line.me/ti/p/~jim113" target="_blank" rel="noopener"
+             class="bg-white rounded-2xl p-7 border border-primary/10 lift flex items-center gap-5 reveal">
+            <span class="weave w-14 h-14 rounded-2xl grid place-items-center text-white shrink-0" style="--weave:#15803D">
+              <i data-lucide="message-circle" class="w-7 h-7"></i>
+            </span>
+            <div>
+              <p class="text-sm text-muted">LINE ID</p>
+              <p class="font-display text-3xl text-primary leading-tight">jim113</p>
+              <p class="text-sm text-accent font-semibold mt-1">แตะเพื่อแอดเลย</p>
+            </div>
+          </a>
+          <a href="tel:0985636995"
+             class="bg-white rounded-2xl p-7 border border-primary/10 lift flex items-center gap-5 reveal">
+            <span class="weave w-14 h-14 rounded-2xl grid place-items-center text-white shrink-0" style="--weave:#C2410C">
+              <i data-lucide="phone" class="w-7 h-7"></i>
+            </span>
+            <div>
+              <p class="text-sm text-muted">โทรสั่งซื้อ</p>
+              <p class="font-display text-3xl text-primary leading-tight">098-563-6995</p>
+              <p class="text-sm text-accent font-semibold mt-1">แตะเพื่อโทร</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="flex flex-wrap items-center justify-center gap-3 mt-10 reveal">
+          <span class="text-sm text-muted">หรือสั่งผ่าน:</span>
+          <a href="#" class="inline-flex items-center gap-2 bg-white border border-primary/15 rounded-full px-4 h-11 font-semibold text-primary hover:bg-sand transition-colors"><i data-lucide="shopping-bag" class="w-[18px] h-[18px]"></i> Shopee</a>
+          <a href="#" class="inline-flex items-center gap-2 bg-white border border-primary/15 rounded-full px-4 h-11 font-semibold text-primary hover:bg-sand transition-colors"><i data-lucide="shopping-cart" class="w-[18px] h-[18px]"></i> Lazada</a>
+          <a href="#" class="inline-flex items-center gap-2 bg-white border border-primary/15 rounded-full px-4 h-11 font-semibold text-primary hover:bg-sand transition-colors"><i data-lucide="music" class="w-[18px] h-[18px]"></i> TikTok Shop</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="weave text-white">
+    <div class="max-w-content mx-auto px-5 py-12 grid sm:grid-cols-2 gap-8 items-center">
+      <div class="flex items-center gap-3">
+        <span class="bg-white/15 w-11 h-11 rounded-xl grid place-items-center" aria-hidden="true">
+          <i data-lucide="package" class="w-6 h-6"></i>
+        </span>
+        <div>
+          <p class="font-display text-2xl leading-none">ตะกร้าสานคำเอ้ย</p>
+          <p class="text-white/75 text-sm mt-1">รับผลิต + ขายปลีก ตะกร้า/กระเป๋าสานเส้นพลาสติก</p>
+        </div>
+      </div>
+      <div class="sm:text-right text-white/85 text-sm space-y-1">
+        <p>LINE: jim113 · โทร 098-563-6995</p>
+        <p>งานสานมือ · ส่งทั่วไทย · เก็บปลายทางได้</p>
+      </div>
+    </div>
+    <div class="border-t border-white/15 text-center text-white/60 text-xs py-4">
+      © 2026 ตะกร้าสานคำเอ้ย — ออกแบบด้วย ui-ux-pro-max
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    lucide.createIcons();
+    // Scroll reveal
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach((el) => io.observe(el));
+  </script>
+</body>
+</html>
